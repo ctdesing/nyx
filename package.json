@@ -1,0 +1,25 @@
+{
+  "name": "nyx",
+  "version": "0.0.1",
+  "description": "Web frontend library.",
+  "main": "src/index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ctdesing/nyx"
+  },
+  "keywords": [
+    "nyx"
+  ],
+  "author": "Miguel Arias, Jhon Nieves",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "parcel": "^2.6.0"
+  }
+}

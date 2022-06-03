@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    ["@babel/plugin-transform-modules-commonjs", {
+      "allowTopLevelThis": true
+    }]
+  ],
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "modules": "systemjs",
+        "targets": {
+          "browsers": [">0.25%", "not dead"]
+        }
+        // "pragma": "dom", // default pragma is React.createElement (only in classic runtime)
+        // "pragmaFrag": "DomFrag", // default is React.Fragment (only in classic runtime)
+        // "throwIfNamespace": false, // defaults to true
+        // "runtime": "classic" // defaults to classic
+        // "importSource": "./frontend" // defaults to react (only in automatic runtime)
+      }
+    ]
+  ]
+}
