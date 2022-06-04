@@ -1,6 +1,9 @@
 class Nyx {
   createElement(tag, options, ...children) {
-    if (typeof tag === 'function') {
+    if (typeof tag === 'function' && !!tag.prototype && !!tag.prototype.constructor) {
+      const element = new tag()
+      return element.render()
+    } else if (typeof tag === 'function') {
       return tag()
     }
 
