@@ -1,5 +1,9 @@
 class Nyx {
   createElement(tag, options, ...children) {
+    if (typeof tag === 'function') {
+      return tag()
+    }
+
     const element = Object.assign(document.createElement(tag),options)
 
     children.forEach(child => {
