@@ -1,8 +1,9 @@
-import React from './frontend'
+import Nyx from './Nyx'
 
-const value = 6 * 2
+const value = 6 * 2 + 1
 
-React.render(
+
+Nyx.render(
   (
   <div>
     <h1 style="color: blue;">{value}</h1>

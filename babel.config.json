@@ -11,12 +11,12 @@
         "modules": "systemjs",
         "targets": {
           "browsers": [">0.25%", "not dead"]
-        }
-        // "pragma": "dom", // default pragma is React.createElement (only in classic runtime)
+        },
+        "pragma": "Nyx.createElement" // default pragma is React.createElement (only in classic runtime)
         // "pragmaFrag": "DomFrag", // default is React.Fragment (only in classic runtime)
         // "throwIfNamespace": false, // defaults to true
-        // "runtime": "classic" // defaults to classic
-        // "importSource": "./frontend" // defaults to react (only in automatic runtime)
+        // "runtime": "automatic", // defaults to classic
+        // "importSource": "nyx" // defaults to react (only in automatic runtime)
       }
     ]
   ]

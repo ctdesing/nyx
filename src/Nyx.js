@@ -1,4 +1,4 @@
-class ReactObject {
+class Nyx {
   createElement(tag, options, ...children) {
     const element = Object.assign(document.createElement(tag),options)
 
@@ -9,8 +9,6 @@ class ReactObject {
         element.appendChild(document.createTextNode(child))
       }
     })
-
-    console.log(options)
     
     return element
   }
@@ -20,12 +18,11 @@ class ReactObject {
   }
 
   render(elements, mountPoint) {
-    console.log(elements)
     mountPoint.appendChild(elements)
   }
 }
 
-export const React = new ReactObject()
+const nyx = new Nyx()
 
 
-export default React
+export default nyx
