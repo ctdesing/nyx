@@ -1,13 +1,9 @@
-# Nyx - A web frontend library using JSX and React syntax.
->### The mision of this project is to help understand how react hooks and react state works, as it is doing a lot of magic under the hood and is not easily understood. This project is to be used strictly for learning purporses, not to be used in production.
+## Nyx - A web frontend library using JSX and React syntax.
+> The mision of this project is to help understand how react hooks and react state works, as it is doing a lot of magic under the hood and is not easily understood. This project is to be used strictly for learning purporses, not to be used in production.
 
 <br>
-<br>
 
-<br>
-<br>
-
->Questions
+>Questions:
 >* How to compile JSX code to CommonJS? eg: ```<h1></h1>``` to ```Nyx.createElement('h1')```. <span style="color:green">Implemented.</span>
 >- - Answer: 
 >- - - using babel as JSX compiler and setting pragma option to Nyx.createElement instead of React.createElement
@@ -26,6 +22,7 @@
 >
 >* How to create an unique id for every useState? <span style="color:yellow">Yet to be tested.</span>
 >- - Answer: 
->- - - function.toString() - change useState to useState with id
->- - - then eval("var fn = function(){ blah1;blah2;blah3; }"); save and return fn()
+>- - - Convert the functional component to a string and replace the ```useState('')``` to ```useState('', uniqueID)```.
+>- - - Then using eval function convert the string back to a function, eg: eval("var fn = function(){ blah1;blah2;blah3; }").
 >- How to re-render only that component? <span style="color:red">Yet to be answered.</span>
+>---
